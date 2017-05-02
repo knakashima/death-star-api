@@ -1,0 +1,190 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Death Star",
+		"_postman_id": "73028aae-d0cf-4a01-b97c-0a2fbf2a57d0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clients - List the clients of planet MR52",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/devices/{{mr52}}/clients?timespan=1800",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "{{X-Cisco-Meraki-API-Key}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Toni",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "orgAccess",
+							"value": "full",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Check for rebel devices on planet MR52"
+			},
+			"response": []
+		},
+		{
+			"name": "Clients - List the clients of planet MR32",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/devices/{{mr32}}/clients?timespan=1800",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "{{X-Cisco-Meraki-API-Key}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Toni",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "orgAccess",
+							"value": "full",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Check for rebel devices on planet MR32"
+			},
+			"response": []
+		},
+		{
+			"name": "Clients - List the clients of planet MR42",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/devices/{{mr42}}/clients?timespan=1800",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "{{X-Cisco-Meraki-API-Key}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Toni",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "orgAccess",
+							"value": "full",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Check for rebel devices on planet MR42"
+			},
+			"response": []
+		},
+		{
+			"name": "Death Star API Fire ! (provide target as JSON)",
+			"request": {
+				"url": "http://10.4.17.24:1880/deathstar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"target\": \"mr42\" }"
+				},
+				"description": "Death Star"
+			},
+			"response": []
+		},
+		{
+			"name": "Death Star API Miss ! GET test (target in URL)",
+			"request": {
+				"url": "http://10.4.17.24:1880/deathstar?deathstar-miss",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"fire\": \"deathstar\" }"
+				},
+				"description": "GET eath Star"
+			},
+			"response": []
+		},
+		{
+			"name": "Battleship API - Fire ! (provide target as JSON)",
+			"request": {
+				"url": "http://10.4.17.24:1880/battleship",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"target\": \"battleship-miss\" }"
+				},
+				"description": "Battleship"
+			},
+			"response": []
+		},
+		{
+			"name": "Battleship API - Fire ! GET test (target in URL)",
+			"request": {
+				"url": "http://10.4.17.24:1880/battleship?target=battleship-test",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"target\": \"miss\" }"
+				},
+				"description": "Battleship GET"
+			},
+			"response": []
+		}
+	]
+}
