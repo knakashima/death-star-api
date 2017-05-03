@@ -51,3 +51,6 @@ A fun way to use Postman, the Meraki Dashboard API, and a simple Sonos HTTP API 
 2. After locating the Rebels, use the Death Star API (Postman) to GET/POST planet coordinates for destruction !
 
 *For alternate sounds, use the manual test inputs (inject nodes) or send different inputs in the HTTP requests via Postman (all included in the collection)*
+
+*Quick demo video here:*
+(https://goo.gl/IhzeMk)
